@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #6A009B;
+    z-index: 2;
+}
+
+.header-content{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1{
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+menu{
+    height: 100px;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul  li a{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: rgb(140, 13, 140);
+    border-radius: 100%;
+    color: whitesmoke;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icon-menu:hover{
+    opacity: 0.8;
+}
+
+/*potada*/
+.content-cover{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-top: 100px;
+    background-image: url(../img/portada2.jpg);
+}
+
+.content-info-cover{
+    max-width:  600px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-info-cover h1{
+    font-size: 25px;
+    color: darkmagenta;
+}
+
+/*contenedor articulos*/
+.container-content{
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+article h1{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+article h2{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 20;
+}
+
+article p{
+    margin-top: 10px;
+    font-size: 17px;
+    color: #2F2C30;
+}
+
+article img{
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+/*articulos relacionados*/
+.container-aside aside{
+    width: 250px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.container-aside aside img{
+    width: 100%;
+}
+
+.container-aside aside h2{
+    margin-top: 10px;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.container-aside aside p{
+    margin-top: 10px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #2F2C30;
+}
+
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 7px 30px;
+    font-size: 15px;
+    background: #C977D7;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/*footer*/
+.container-footer{
+    width: 100%;
+    padding: 40px;
+    background: whitesmoke;
+    margin-top: 40px;
+}
+
+.container-footer footer{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+    width: 100px;
+}
+
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer hr{
+    margin: 20px;
+    border: none;
+    height: 2px;
+    background: #CCABFF;
+}
+
+.container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #F5EAFD;
+    font-weight: 200px;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 1200px) {
+    .header-content, .container-content, .container-footer footer{
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .container-content{
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+}
